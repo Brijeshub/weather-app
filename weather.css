@@ -33,7 +33,7 @@ body{
     color: #555;
     height: 60px;
     flex: 1;
-    margin-right: 16px;
+    margin-right: 8px;
     font-size: 18px;
 }
 .search button{
@@ -88,4 +88,16 @@ body{
     margin-top: 10px;
     font-size: 14px;
     display: none;
+}
+@media  screen and (max-width:420px){
+   .search input{
+    
+    padding: 0px 12px;
+    height: 45px;
+   }
+   .search button{
+    height: 50px;
+    width: 50px;
+   }
+
 }
