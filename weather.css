@@ -50,7 +50,7 @@ body{
     width: 16px;
 }
 .weather-icon{
-    width: 170px;
+    width: 150px;
     margin-top: 30px;
 }
 .waether h1{
@@ -58,26 +58,32 @@ body{
     font-weight: 500;
 }
 .weather h2{
-    font-size: 40px;
+    font-size: 2rem;
     margin-top: 400;
     margin-top: -10px;
+
 }
 .details{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
+    padding: 0 15px;
+    margin-top: 40px;
+
+
 }
 .col{
     display: flex;
     align-items: center;
     text-align: left;
+    /* outline: 2px solid red; */
+    width: 35%;
 
 }
 .col img{
-    width: 40px;
-    margin-right: 10px;
+    
+    width: 50%;
+    margin-right: 15px;
 }
 .weather{
     display: none;
@@ -91,7 +97,7 @@ body{
 }
 @media  screen and (max-width:420px){
    .search input{
-    
+    width: 50%;
     padding: 0px 12px;
     height: 45px;
    }
@@ -101,3 +107,15 @@ body{
    }
 
 }
+@media  screen and (max-width:350px){
+    .search input{
+     width: 20%;
+     padding: 0px 12px;
+     height: 45px;
+    }
+    .search button{
+     height: 40px;
+     width: 40px;
+    }
+ 
+ }
