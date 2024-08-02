@@ -4,18 +4,40 @@
     box-sizing: border-box;
 }
 body{
+    padding: 0;
+    margin: 0;
+    position: relative;
     background: #222;
 }
+.main{
+   z-index: -1;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+.main>.slider{
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    height: 100vh;
+    width: 100%;
+    /* transition: all 1s ease; */
+}
 .card{
+    position: absolute;
+    top: 0px;
+    left: 33%;
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg,#00feba,#5b548a);
+    background: linear-gradient(135deg,#0c311ea7,#1914382d);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-
+    z-index: 999;
 }
 .search{
     display: flex;
@@ -95,7 +117,18 @@ body{
     font-size: 14px;
     display: none;
 }
-@media  screen and (max-width:420px){
+@media screen and (max-width:750px){
+    .imageDiv>.image{
+        height: 100vh;
+        width: 100%;
+       
+    }
+    .card{
+        left: 14%;
+    }
+}
+
+@media  screen and (width:420px){
    .search input{
     width: 50%;
     padding: 0px 12px;
@@ -105,6 +138,10 @@ body{
     height: 50px;
     width: 50px;
    }
+   .card{
+    left: 5%;
+    top:-60px;
+}
 
 }
 @media  screen and (max-width:350px){
@@ -116,6 +153,13 @@ body{
     .search button{
      height: 40px;
      width: 40px;
+    }
+    .imageDiv>.image{
+        width: 100%;
+    }
+    .card{
+        left: 5%;
+        top:-60px;
     }
  
  }
