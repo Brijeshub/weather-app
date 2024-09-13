@@ -23,7 +23,7 @@ body{
     background-origin: content-box;
     height: 100vh;
     width: 100%;
-    /* transition: all 1s ease; */
+    transition: all 1s ease;
 }
 .card{
     position: absolute;
@@ -128,7 +128,7 @@ body{
     }
 }
 
-@media  screen and (width:420px){
+@media  screen and (max-width:420px){
    .search input{
     width: 50%;
     padding: 0px 12px;
@@ -144,22 +144,29 @@ body{
 }
 
 }
-@media  screen and (max-width:350px){
+@media  screen and (width:390px){
+   .card{
+    outline: 1px solid red;
+    width: 45%;
+    height: 5px;
+    left: 7%;
+    top:-60px;
+   }
     .search input{
-     width: 20%;
-     padding: 0px 12px;
-     height: 45px;
+     outline: 2px solid red;
+     width: 100%;
+     margin: -10px 5px;
+     height: 20px;
+     font-size: 11px;
     }
     .search button{
-     height: 40px;
-     width: 40px;
+     height: 25px;
+     width: 25px;
+     padding: 4px;
     }
     .imageDiv>.image{
-        width: 100%;
+        width: 50%;
     }
-    .card{
-        left: 5%;
-        top:-60px;
-    }
+    
  
  }
